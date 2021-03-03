@@ -1,0 +1,17 @@
+.wrapper{    
+    width: 80%;
+    padding: 10px 0;
+    margin: auto;
+}
+
+@media (max-width: $tablet) and (min-width: $mobile){
+    .wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: $mobile){
+    .wrapper{
+        width: 95%;
+    }
+}
