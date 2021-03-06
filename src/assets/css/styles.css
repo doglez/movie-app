@@ -56,3 +56,7 @@ body {
   font-family: "Bebas Neue", cursive;
   color: #e50914ff;
 }
+
+.selected {
+  color: red;
+}
