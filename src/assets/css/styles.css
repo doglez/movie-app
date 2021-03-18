@@ -36,6 +36,10 @@ body {
   background-color: #000000ff;
 }
 
+.mouse_pointer {
+  cursor: pointer;
+}
+
 .wrapper {
   width: 93%;
   padding: 10px 0;
@@ -95,26 +99,23 @@ header {
   margin-left: auto;
 }
 
+.account_button .rotate_icon {
+  transition: all 0.3s linear;
+}
+
 .account_dropdown_button {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.account_dropdown_button span {
-  transition: all 0.3s linear;
-}
 
-.account_dropdown_button:hover span {
+.account_button:hover .rotate_icon {
   transform: rotate(180deg);
 }
 
-.adult_icon {
+.user_icon {
   width: 30px;
   border-radius: 10%;
-}
-
-.mouse_pointer {
-  cursor: pointer;
 }
 
 .menu_right {
@@ -122,4 +123,40 @@ header {
   align-items: center;
   width: 280px;
   justify-content: space-between;
+}
+
+.drop_down_menu_list {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px 10px;
+  margin-top: -15px;
+  margin-left: -150px;
+}
+.drop_down_menu_list li {
+  padding: 5px 0;
+  font-size: 14px;
+}
+.drop_down_menu_list li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.drop_down_menu_list hr {
+  margin: 10px 0;
+  border-top: 1px solid #000;
+}
+
+.drop_down_menu_icon {
+  margin-top: 5px;
+  font-size: 32px;
+}
+
+.kids_section {
+  display: flex;
+  align-items: center;
+}
+.kids_section span {
+  margin-left: 5px;
+}
+
+.drop_down_menu {
+  margin-top: -100%;
 }

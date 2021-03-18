@@ -5,30 +5,32 @@ header {
     transition: all 0.5s ease-in-out;
 }
 
-.header_scroll_effect{
+.header_scroll_effect {
     background: $primary-dark;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    height: 70px;    
+    height: 70px;
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 25px;
     margin-right: 40px;
 }
 
-.menu_items{
+.menu_items {
     font-size: 15px;
+
     a {
         margin-right: 20px;
         transition: all 0.2s ease-in-out;
     }
-    a:hover{
-      color: rgba($color: $textColor, $alpha: .6);  
+
+    a:hover {
+        color: rgba($color: $textColor, $alpha: .6);
     }
 }
 
@@ -41,33 +43,70 @@ header {
     margin-left: auto;
 }
 
-.account_dropdown_button{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    span{
-        transition: all 0.3s linear;    
+.account_button {    
+    .rotate_icon {
+        transition: all 0.3s linear;
     }
 }
 
-.account_dropdown_button:hover{
-    span{
+.account_dropdown_button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.account_button:hover {
+    .rotate_icon {
         transform: rotate(180deg);
     }
 }
 
-.adult_icon{
+.user_icon {
     width: 30px;
     border-radius: 10%;
 }
 
-.mouse_pointer{
-    cursor: pointer;
-}
-
-.menu_right{
+.menu_right {
     display: flex;
     align-items: center;
     width: 280px;
     justify-content: space-between;
+}
+
+.drop_down_menu_list {
+    background: rgba($color: $primary-dark, $alpha: 0.9);
+    padding: 10px 10px;
+    margin-top: -15px;
+    margin-left: -150px;
+
+    li {
+        padding: 5px 0;
+        font-size: 14px;
+    }
+    li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    hr {
+        margin: 10px 0;
+        border-top: 1px solid #000;
+    }
+}
+
+.drop_down_menu_icon {
+    margin-top: 5px;
+    font-size: 32px;    
+}
+
+.kids_section {
+    display: flex;
+    align-items: center;
+    span {
+        margin-left: 5px;
+    }
+}
+
+.drop_down_menu{
+    margin-top: -100%;
 }
