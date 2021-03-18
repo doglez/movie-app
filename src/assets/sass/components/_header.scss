@@ -1,3 +1,73 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+}
+
+.header_scroll_effect{
+    background: $primary-dark;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 70px;    
+}
+
+.logo{
+    width: 100px;
+    height: 25px;
+    margin-right: 40px;
+}
+
+.menu_items{
+    font-size: 15px;
+    a {
+        margin-right: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    a:hover{
+      color: rgba($color: $textColor, $alpha: .6);  
+    }
+}
+
 .selected {
-    color: red;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.push {
+    margin-left: auto;
+}
+
+.account_dropdown_button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    span{
+        transition: all 0.3s linear;    
+    }
+}
+
+.account_dropdown_button:hover{
+    span{
+        transform: rotate(180deg);
+    }
+}
+
+.adult_icon{
+    width: 30px;
+    border-radius: 10%;
+}
+
+.mouse_pointer{
+    cursor: pointer;
+}
+
+.menu_right{
+    display: flex;
+    align-items: center;
+    width: 280px;
+    justify-content: space-between;
 }

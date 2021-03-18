@@ -1,6 +1,6 @@
 /* SCSS HEX */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Material+Icons+Round");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 /* Configuration fonts */
 * {
   font-family: "Ubuntu", sans-serif;
@@ -37,14 +37,14 @@ body {
 }
 
 .wrapper {
-  width: 80%;
+  width: 93%;
   padding: 10px 0;
   margin: auto;
 }
 
 @media (max-width: 960px) and (min-width: 600px) {
   .wrapper {
-    width: 90%;
+    width: 95%;
   }
 }
 @media (max-width: 600px) {
@@ -52,11 +52,74 @@ body {
     width: 95%;
   }
 }
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+}
+
+.header_scroll_effect {
+  background: #000000ff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+
 .logo {
-  font-family: "Bebas Neue", cursive;
-  color: #e50914ff;
+  width: 100px;
+  height: 25px;
+  margin-right: 40px;
+}
+
+.menu_items {
+  font-size: 15px;
+}
+.menu_items a {
+  margin-right: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.menu_items a:hover {
+  color: rgba(239, 235, 233, 0.6);
 }
 
 .selected {
-  color: red;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.account_dropdown_button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.account_dropdown_button span {
+  transition: all 0.3s linear;
+}
+
+.account_dropdown_button:hover span {
+  transform: rotate(180deg);
+}
+
+.adult_icon {
+  width: 30px;
+  border-radius: 10%;
+}
+
+.mouse_pointer {
+  cursor: pointer;
+}
+
+.menu_right {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  justify-content: space-between;
 }

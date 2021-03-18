@@ -1,19 +1,27 @@
-import React from 'react'
-import { Redirect } from 'react-router'
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useState } from 'react'
 import NavBar from './NavBar'
 
 const Header = () => {
 
+    const [headerScroll, setHeaderScroll] = useState(false)
 
-    const path = document.location.pathname
-    if (path === '/') {
-        <Redirect to='/browse'/>
+    const handleScrollEffect = () => {
+        if (window.scrollY >= 20) {
+            setHeaderScroll(!headerScroll)
+        } else {
+            setHeaderScroll(headerScroll)
+        }
     }
 
+    useEffect(() => {
+        window.addEventListener('scroll', handleScrollEffect)
+    },[])
+
     return (
-        <div>
+        <header className={headerScroll ? 'header_scroll_effect' : null}>
             <NavBar/>
-        </div>
+        </header>
     )
 }
 
