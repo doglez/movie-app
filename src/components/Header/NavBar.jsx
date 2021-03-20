@@ -2,7 +2,6 @@ import React from 'react'
 import MenuItems from './MenuItems'
 import NeflixLogo from '../../assets/img/Netflix_2015_logo.svg'
 import AccountButton from './AccountButton'
-import DropDownMenu from './DropDownMenu'
 
 const NavBar = () => {
     return (
@@ -17,7 +16,6 @@ const NavBar = () => {
                 <span className="material-icons mouse_pointer">notifications</span>
                 <AccountButton/>
             </div>
-            <DropDownMenu/>
         </div>
     )
 }
