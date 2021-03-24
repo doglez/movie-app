@@ -124,22 +124,22 @@ header {
     right: 22%;
     display: flex;
     align-items: center;
-    
+    border: 1px solid white;
     span{
         padding: 2px;
     }
 }
 
 .cancel_icon{
-    color: transparent;
-    display: none;
+    // color: transparent;
+    // display: none;
 }
 
 #search {
     background: none;
     font-size: 14px;
     border: none;
-    display: none;
+    // display: none;
 }
 #search:focus{
     outline: none;
