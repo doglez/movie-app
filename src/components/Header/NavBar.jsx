@@ -11,7 +11,7 @@ const NavBar = () => {
             <MenuItems/>
             <div className='push'></div>
             <div className='menu_right'>
-                <div className='mouse_pointer'>Kids</div>
+                <div className='mouse_pointer'>KIDS</div>
                 <span className="material-icons mouse_pointer">card_giftcard</span>
                 <span className="material-icons mouse_pointer">notifications</span>
                 <AccountButton/>
