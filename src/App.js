@@ -7,7 +7,6 @@ import Series from './components/Series/Series'
 import Movies from './components/Movies/Movies'
 import Latest from './components/Latest/Latest'
 import MyList from './components/MyList/MyList'
-import {ApiRequest} from './components/Request/ApiRequest.jsx'
 
 const App = ()=> {    
 
